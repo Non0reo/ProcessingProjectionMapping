@@ -5,6 +5,7 @@ int nVid = int(random(0, myMovie.length));
 int PreviousNVid;
 int posX = width/2;
 int posY = height/2;
+boolean text = false;
 
 void setup(){
   print(nVid);
@@ -41,7 +42,7 @@ void draw(){
   translate(width/2, height/2);
   //rotateY(float(mouseX - width/2) / 800);
   //rotateX(-float(mouseY - height/2) / 1000);
-  //rotateZ(PI/2);
+  //rotateZ(PI/(180/1));
   imageMode(CENTER); 
   switch (nVid){
     case 0:
@@ -61,7 +62,7 @@ void draw(){
       break; 
   }
   //image(myMovie[nVid], posX/* - 400*/, posY, 9 * s, 16 * s);
-  text("Actual: " + nVid + "\nPrevious: " + PreviousNVid, posX, posY + 200);
+  if(text == true) text("Actual: " + nVid + "\nPrevious: " + PreviousNVid, posX, posY + 200);
   //myMovie.blend(myMovie, 0, 0, 132, 400, 268, 0, 132, 400, SUBTRACT); 
   //image(myMovie, 0, 0, 16 * s, 9 * s);
   
@@ -76,7 +77,7 @@ void movieEvent(Movie m) {
 
 
 void keyPressed() {
-  if (keyCode == LEFT && myMovie[nVid].time() > 0) {
+  if (keyCode == LEFT && myMovie[nVid].time() > 5) {
     //myMovie.jump(0);
     myMovie[nVid].stop();
     PreviousNVid = nVid;
@@ -134,14 +135,30 @@ void keyPressed() {
       
     case 'D':
       posX += 1;
-      break; 
+      break;
       
-    //Debug: Vitesse
-    case 'L':
-        myMovie[nVid].speed(5.0);
+    case 'o':
+      posY += -10;
+      break;
+      
+    case 'k':
+      posX += -10;
       break;
       
     case 'l':
+      posY += 10;
+      break;
+      
+    case 'm':
+      posX += 10;
+      break;
+      
+    //Debug: Vitesse
+    case 'P':
+        myMovie[nVid].speed(5.0);
+      break;
+      
+    case 'p':
       /*for(int i = 0; i < myMovie.length; i++){
         myMovie[i].speed(1.0);
       }*/
@@ -184,6 +201,11 @@ void keyPressed() {
     case '8':
       playMediaNumPad(8);
       break; 
+      
+    //Debuig: Text  
+    case '.':
+      text = !text;
+      break;
       
   }
 
