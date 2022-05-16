@@ -1,0 +1,162 @@
+{
+  "noremove" : [
+    {
+      "category": "start",
+      "name": "vous"
+    },
+    {
+      "category": "manger",
+      "name": "manger"
+    },
+    {
+      "category": "amoureux",
+      "name": "amoureux"
+    }
+  ],
+  "start" : [
+    {
+      "name": "vous",
+      "after": ["verbe"]
+    }
+  ],
+  "verbe": [
+    {
+      "name": "irez",
+      "after": ["lieu"]
+    },
+    {
+      "name": "mangerez",
+      "after": ["nourriture"]
+    },
+    {
+      "name": "tomberez",
+      "after": ["amoureux"]
+    },
+    {
+      "name": "adopterez",
+      "after": ["animal2"]
+    },
+    {
+      "name": "monterez",
+      "after": ["vehicule"]
+    }
+  ],
+  "lieu": [
+    {
+      "name": "en Australie",
+      "after": ["transport"]
+    },
+    {
+      "name": "au MacDonald's le plus proche",
+      "after": ["transport", "manger"]
+    },
+    {
+      "name": "sur Mars",
+      "after": ["transport"]
+    }
+  ],
+  "nourriture": [
+    {
+      "name": "un kebab",
+      "after": ["end"]
+    },
+    {
+      "name": "un hamburger",
+      "after": ["end"]
+    },
+    {
+      "name": "un sandwich",
+      "after": ["end"]
+    }
+  ],
+  "animal": [
+    {
+      "name": "d'un crocodile",
+      "after": ["end"]
+    },
+    {
+      "name": "de quelqu'un dans la rue",
+      "after": ["end"]
+    },
+    {
+      "name": "d'un chien errant",
+      "after": ["end"]
+    }
+  ],
+  "transport": [
+    {
+      "name": "avec une fus\u00e9e de SpaceX",
+      "after": ["end"]
+    },
+    {
+      "name": "en nageant",
+      "after": ["end"]
+    },
+    {
+      "name": "en sautant",
+      "after": ["end"]
+    }
+  ],
+  "manger": [
+    {
+      "name": "manger",
+      "after": ["nourriture"]
+    }
+  ],
+  "animal2": [
+    {
+      "name": "un crocodile errant",
+      "after": ["end"]
+    },
+    {
+      "name": "une ch\u00e9vre abandonn\u00e9e",
+      "after": ["end"]
+    },
+    {
+      "name": "une girafe perdue",
+      "after": ["end"]
+    }
+  ],
+  "vehicule": [
+    {
+      "name": "dans une mongolfi\u009ere",
+      "after": ["end"]
+    },
+    {
+      "name": "dans une fus\u00e9e",
+      "after": ["end"]
+    },
+    {
+      "name": "dans un train intergalactique",
+      "after": ["end"]
+    }
+  ],
+  "amoureux": [
+    {
+      "name": "in love",
+      "after": ["animal"]
+    }
+  ],
+  "revoir": [
+    {
+      "name": "Bisous !",
+      "after": ["end"]
+    },
+    {
+      "name": "Tchao !",
+      "after": ["end"]
+    },
+    {
+      "name": "Hasta la vista beyby !",
+      "after": ["end"]
+    },
+    {
+      "name": "Partez maintenant !",
+      "after": ["end"]
+    },
+    {
+      "name": "Aboule le fric !",
+      "after": ["end"]
+    }
+  ]
+}
