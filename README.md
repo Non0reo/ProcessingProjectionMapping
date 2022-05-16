@@ -26,5 +26,5 @@ __Controles :__
 
 __Note :__
 
-Je vais tout de suite me dédouaner, le code a été fait à la va vite c'est donc pour ça qu'il est pas beau
-C'est avant tout un prototype qui s'avère à fonctionner.
+Je vais tout de suite me dédouaner, le code a été fait à la va vite, c'est donc pour ça qu'il est vraiment pas beau.
+C'est avant tout un prototype qui s'avère fonctionner.
